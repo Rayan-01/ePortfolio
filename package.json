@@ -1,0 +1,15 @@
+{
+  "name": "rayan-alam-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Rayan Alam's robotics and computer vision portfolio",
+  "scripts": {
+    "dev": "node server.cjs",
+    "start": "node server.cjs",
+    "build:models": "esbuild robotics-source.js --bundle --minify --format=iife --platform=browser --target=es2020 --legal-comments=eof --outfile=robotics.js"
+  },
+  "devDependencies": {
+    "three": "0.180.0",
+    "esbuild": "0.25.10"
+  }
+}
